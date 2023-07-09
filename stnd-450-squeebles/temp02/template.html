@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <title>Squeebles</title>
+    <style type="text/css">
+      .ReadMsgBody {width: 100% !important;}
+      body {
+        background-color: #FFFFFF !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+      div, p, a, li, td {-webkit-text-size-adjust: none !important;}
+      
+      /* iOS Address Link Handling */
+      .appleLinks a {
+        color: #222322 !important;
+        text-decoration: none !important;
+      }
+      
+      /* iPhone Truncation Fix */
+      .fake_css {
+        width: 100%;
+        display: block;
+        -webkit-text-size-adjust: none;
+        margin: 1em 0;
+        color: black;
+        text-decoration: none;
+        border-bottom: none; /* first */
+        background: none;  /* first */
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        background: none; /* second */
+        border-bottom: thin; /* second */
+        border-bottom-style: double;
+        background-repeat: repeat;
+        border-left-color: #C06C06;
+        background-attachment: scroll;
+        border: thin;
+        page-break-before: auto; /* first */
+        page-break-before: avoid; /* second */
+        page-break-inside: inherit;
+        azimuth: center-left;
+        vertical-align: inherit;
+        font-stretch: extra-condensed;
+        font-size-adjust: none;
+        list-style-image: none;
+        counter-reset: none;
+        letter-spacing: normal;
+        empty-cells: inherit;
+        elevation: higher;
+      }
+    </style>
+  </head>
+  <body bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF; background-image: url('https://s3.amazonaws.com/email-assets.squeebles.com/02/body-bg-397x322.png'); margin: 0; padding:0;">
+    <div style="background-color: #FFFFFF;">
+      <!--[if gte mso 9]>
+        <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+          <v:fill type="tile" src="https://s3.amazonaws.com/email-assets.squeebles.com/02/body-bg-397x322.png" color="#FFFFFF"/>
+        </v:background>
+      <![endif]-->
+      <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+        <tr>
+          <td align="left" background="https://s3.amazonaws.com/email-assets.squeebles.com/02/body-bg-397x322.png" valign="top">
+            
+            <!-- HEADER - (100%x82) -->
+            <table border="0" cellpadding="0" cellspacing="0" height="82" width="100%">
+              <tr>
+                <td background="https://s3.amazonaws.com/email-assets.squeebles.com/02/header-bg-1x82.png" bgcolor="transparent" height="82" valign="top">
+                  <!--[if gte mso 9]>
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;height:82px;">
+                      <v:fill type="tile" src="https://s3.amazonaws.com/email-assets.squeebles.com/02/header-bg-1x82.png" color="transparent" />
+                    <v:textbox inset="0,0,0,0">
+                  <![endif]-->
+                  <div>
+                    <!-- HEADER CONTENT - (450x82) -->
+                    <table align="center" bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" height="82" width="450">
+                      <tr>
+                        <td height="82" width="268" style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; font-weight: bold;">
+                          <a border="0" href="{{home_link}}" style="color: transparent; text-decoration: none; border: 0;">
+                            <img alt="{{title}}" border="0" height="82" width="268" src="https://s3.amazonaws.com/email-assets.squeebles.com/02/logo-squeebles-268x82.png" style="display:block; border: none;" />
+                          </a>
+                        </td>
+                        <td height="82" width="30"></td>
+                        <td height="60" width="152" valign="top">
+                          <table border="0" align="right" cellpadding="0" cellspacing="0" width="152">
+                            <tr height="16"><td height="16"></td></tr>
+                            <tr>
+                              <td align="right" height="12" style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                                Not interested in <!--{{title}}-->Squeebles?
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="right" height="12" style="color: #F0E214; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                                <a href="{{unsubscribe_link}}" style="color: #F0E214; text-decoration: underline;">It’s easy to unsubscribe</a>.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if gte mso 9]>
+                    </v:textbox>
+                    </v:rect>
+                  <![endif]-->
+                </td>
+              </tr>
+            </table>
+            
+            <!-- TOP SPACER - (450x15) -->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" height="15" width="450">
+              <tr>
+                <td height="15"></td>
+              </tr>
+            </table>
+            
+            <!-- CONTENT AREA - (450x%) -->
+            <table align="center" bgcolor="#FFFFFF" border="0" cellpadding="20" cellspacing="0" height="15" width="450" style="border: 1px solid #95C93D; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;">
+              <tr>
+                <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="408">
+                    <!-- MAIN HEADING -->
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="408">
+                          <tr>
+                            <td width="30"></td>
+                            <td width="348">
+                              <table align="center" bgcolor="#49A0D9" cellpadding="5" cellspacing="0" height="100%" width="100%" style="border: 1px solid #95C93D; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                <tr>
+                                  <td align="center" valign="middle" style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; font-weight: bold;">
+                                    <a border="0" href="{{home_link}}" style="color: #858585; text-decoration: none; border: 0;">
+                                      <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; font-weight: bold;">
+                                        <!--{{main_heading_01}}-->
+                                        Squeeble Paw of Approval!
+                                      </span>
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td width="30"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr height="15"><td height="15" style="height: 15px; line-height: 15px;">&nbsp;</td></tr>
+                    
+                    <!-- FEATURED VIDEOS -->
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="408">
+                          <tr>
+                            <!-- COLUMN LEFT (100%x191) -->
+                            <td height="100%" valign="top" width="191">
+                              <!-- FEATURED THUMB -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="191">
+                                <tr>
+                                  <td style="color: #F6863E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px;">
+                                    <a border="0" href="{{featured_url_01}}" style="color: transparent; text-decoration: none;">
+                                      <!--<img alt="{{featured_title_01}}" border="0" height="123" width="187" src="{{featured_thumb_01}}" style="display: block; border: none; border: 2px solid #95C93D;" />-->
+                                      <img alt="{{featured_title_01}}" border="0" height="123" width="187" src="https://s3.amazonaws.com/email-assets.squeebles.com/02/thumb-example-187x123.jpg" style="display: block; border: none; border: 2px solid #95C93D;" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- DASHED DIVIDER -->
+                              <table border="0" cellpadding="0" cellspacing="0" height="1" width="191">
+                                <tr height="12"><td height="12"></td></tr>
+                                <tr height="1">
+                                  <td height="1" style="border-top: 1px dashed #DEDEDD; height: 1px; line-height: 1px; font-size: 0;">&nbsp;</td>
+                                </tr>
+                                <tr height="12"><td height="12"></td></tr>
+                              </table>
+                              <!-- FEATURED DESC -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="191">
+                                <tr>
+                                  <td align="center">
+                                    <span style="color: #7E7E7E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                                      <!--{{featured_desc_01}}... <a href="{{featured_url_01}}" style="color: #49A0D9; text-decoration: underline;">Read&nbsp;More</a>-->
+                                      Integer massa quam, malesuada non rutrum vitae, condimentum a turpis. Vivamus commodo, urna quis feugiat sodales, lacus massa ultricies. <a href="{{featured_url_01}}" style="color: #49A0D9; text-decoration: underline;">Read&nbsp;More</a>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr height="20"><td height="20"></td></tr>
+                              </table>
+                              <!-- FEATURED CTA -->
+                              <table align="right" bgcolor="#F5853F" cellpadding="6" cellspacing="0" height="30" width="191" style="border: 1px solid #AB6135; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                <tr>
+                                  <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="177">
+                                      <tr>
+                                        <td align="center" valign="middle" width="155" style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; text-transform: uppercase; font-size: 12px;">
+                                          <a href="{{featured_url_01}}" style="color: #FFFFFF; text-decoration: none;">
+                                            <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; text-transform: uppercase; font-size: 12px;">
+                                              <strong>
+                                                <!--{{featured_cta_01}}-->
+                                                Check out the video!
+                                              </strong>
+                                            </span>
+                                          </a>
+                                        </td>
+                                        <td bgcolor="#F8A16A" width="1"></td>
+                                        <td bgcolor="#AB6135" width="1"></td>
+                                        <td width="22">
+                                          <img alt="{{featured_cta_01}}" border="0" height="18" width="22" src="https://s3.amazonaws.com/email-assets.squeebles.com/01/cta-icon-22x18.png" style="display: block; border: none; border: none;"/>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            
+                            <!-- SPACER (28x100%)-->
+                            <td height="100%" width="28"></td>
+                            
+                            <!-- COLUMN RIGHT (100%x191) -->
+                            <td height="100%" valign="top" width="191">
+                              <!-- FEATURED THUMB -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="191">
+                                <tr>
+                                  <td style="color: #F6863E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px;">
+                                    <a border="0" href="{{featured_url_02}}" style="color: transparent; text-decoration: none;">
+                                      <!--<img alt="{{featured_title_02}}" border="0" height="123" width="187" src="{{featured_thumb_02}}" style="display: block; border: none; border: 2px solid #95C93D;" />-->
+                                      <img alt="{{featured_title_02}}" border="0" height="123" width="187" src="https://s3.amazonaws.com/email-assets.squeebles.com/02/thumb-example-187x123.jpg" style="display: block; border: none; border: 2px solid #95C93D;" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- DASHED DIVIDER -->
+                              <table border="0" cellpadding="0" cellspacing="0" height="1" width="191">
+                                <tr height="12"><tdheight="12"></td></tr>
+                                <tr height="1">
+                                  <td height="1" style="border-top: 1px dashed #DEDEDD; height: 1px; line-height: 1px; font-size: 0;">&nbsp;</td>
+                                </tr>
+                                <tr height="12"><td height="12"></td></tr>
+                              </table>
+                              <!-- FEATURED DESC -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="191">
+                                <tr>
+                                  <td align="center">
+                                    <span style="color: #7E7E7E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                                      <!--{{featured_desc_02}}... <a href="{{featured_url_02}}" style="color: #49A0D9; text-decoration: underline;">Read&nbsp;More</a>-->
+                                      Integer massa quam, malesuada non rutrum vitae, condimentum a turpis. Vivamus commodo, urna quis feugiat sodales, lacus massa ultricies. <a href="{{featured_url_02}}" style="color: #49A0D9; text-decoration: underline;">Read&nbsp;More</a>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr height="20"><td height="20"></td></tr>
+                              </table>
+                              <!-- FEATURED CTA -->
+                              <table align="right" bgcolor="#F5853F" cellpadding="6" cellspacing="0" height="30" width="191" style="border: 1px solid #AB6135; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                <tr>
+                                  <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="177">
+                                      <tr>
+                                        <td align="center" valign="middle" width="155" style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; text-transform: uppercase; font-size: 12px;">
+                                          <a href="{{featured_url_02}}" style="color: #FFFFFF; text-decoration: none;">
+                                            <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; text-transform: uppercase; font-size: 12px;">
+                                              <strong>
+                                                <!--{{featured_cta_02}}-->
+                                                Check out the video!
+                                              </strong>
+                                            </span>
+                                          </a>
+                                        </td>
+                                        <td bgcolor="#F8A16A" width="1"></td>
+                                        <td bgcolor="#AB6135" width="1"></td>
+                                        <td width="22">
+                                          <img alt="{{featured_cta_02}}" border="0" height="18" width="22" src="https://s3.amazonaws.com/email-assets.squeebles.com/01/cta-icon-22x18.png" style="display: block; border: none; border: none;"/>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    
+                    <!-- SUB HEADING -->
+                    <tr height="30"><td height="30" style="height: 30px; line-height: 30px;">&nbsp;</td></tr>
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="408">
+                          <tr>
+                            <td width="30"></td>
+                            <td width="348">
+                              <table align="center" bgcolor="#49A0D9" cellpadding="5" cellspacing="0" height="100%" width="100%" style="border: 1px solid #95C93D; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                <tr>
+                                  <td align="center" valign="middle" style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; font-weight: bold;">
+                                    <a border="0" href="{{home_link}}" style="color: #858585; text-decoration: none; border: 0;">
+                                      <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; font-weight: bold;">
+                                        <!--{{sub_heading_01}}-->
+                                        Other Popular Videos!
+                                      </span>
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td width="30"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr height="15"><td height="15" style="height: 15px; line-height: 15px;">&nbsp;</td></tr>
+                    
+                    <!-- POPULAR ITEM (01) -->
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="408">
+                          <tr>
+                            <td valign="top" width="120" style="color: #F6863E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">
+                              <!-- POPULAR THUMBNAIL -->
+                              <a border="0" href="{{popular_url_01}}" style="color: transparent; text-decoration: none;">
+                                <!--<img alt="{{popular_title_01}}" border="0" height="76" width="116" src="{{popular_thumb_01}}" style="display: block; border: none; border: 2px solid #95C93D;" />-->
+                                <img alt="{{popular_title_01}}" border="0" height="76" width="116" src="https://s3.amazonaws.com/email-assets.squeebles.com/02/thumb-example-187x123.jpg" style="display: block; border: none; border: 2px solid #95C93D;" />
+                              </a>
+                            </td>
+                            <td valign="top" width="14"></td>
+                            <td valign="top" width="276">
+                              <!-- POPULAR TITLE -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <td valign="top">
+                                    <span style="color: #F6863E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 13px; line-height: 13px;">
+                                      <a href="{{popular_url_01}}" style="color: #F6863E; text-decoration: none;">
+                                        <strong>
+                                          <!--{{popular_title_01}}-->
+                                          Dog And Jaguar Are Best Friends!?!! This Video Absolutely MELTS My Heart!
+                                        </strong>
+                                      </a>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- SOLID DIVIDER -->
+                              <table border="0" cellpadding="0" cellspacing="0" height="1" width="276">
+                                <tr height="8"><td height="8"></td></tr>
+                                <tr height="1">
+                                  <td height="1" style="border-top: 1px solid #DEDEDD; height: 1px; line-height: 1px; font-size: 0;">&nbsp;</td>
+                                </tr>
+                                <tr height="4"><td height="4"></td></tr>
+                              </table>
+                              <!-- POPULAR DESC -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="276">
+                                <tr>
+                                  <td align="left">
+                                    <span style="color: #7E7E7E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px; line-height: 11px;">
+                                      <!--{{popular_desc_01}}... <a href="{{popular_url_01}}" style="color: #49A0D9; font-weight: bold; text-decoration: underline;"><strong>Read&nbsp;More</strong></a>-->
+                                      Integer massa quam, malesuada non rutrum vitae, condimentum a turpis. Vivamus commodo, urna quis feugiat sodales, lacus massa ultricies. <a href="{{popular_url_01}}" style="color: #49A0D9; font-weight: bold; text-decoration: underline;"><strong>Read&nbsp;More</strong></a>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr height="20"><td height="20" style="height: 20px; line-height: 20px;">&nbsp;</td></tr>
+                    
+                    <!-- POPULAR ITEM (02) -->
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td valign="top" width="120" style="color: #F6863E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">
+                              <!-- POPULAR THUMBNAIL -->
+                              <a border="0" href="{{popular_url_02}}" style="color: transparent; text-decoration: none;">
+                                <!--<img alt="{{popular_title_02}}" border="0" height="76" width="116" src="{{popular_thumb_02}}" style="display: block; border: none; border: 2px solid #95C93D;" />-->
+                                <img alt="{{popular_title_02}}" border="0" height="76" width="116" src="https://s3.amazonaws.com/email-assets.squeebles.com/02/thumb-example-187x123.jpg" style="display: block; border: none; border: 2px solid #95C93D;" />
+                              </a>
+                            </td>
+                            <td valign="top" width="14"></td>
+                            <td valign="top" width="276">
+                              <!-- POPULAR TITLE -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <td valign="top">
+                                    <span style="color: #F6863E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 13px; line-height: 13px;">
+                                      <a href="{{popular_url_02}}" style="color: #F6863E; text-decoration: none;">
+                                        <strong>
+                                          <!--{{popular_title_02}}-->
+                                          Is That A Freight Train Coming Through? No, It’s A ... Small Duck Snoring?!??
+                                        </strong>
+                                      </a>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- SOLID DIVIDER -->
+                              <table border="0" cellpadding="0" cellspacing="0" height="1" width="276">
+                                <tr height="8"><td height="8"></td></tr>
+                                <tr height="1">
+                                  <td height="1" style="border-top: 1px solid #DEDEDD; height: 1px; line-height: 1px; font-size: 0;">&nbsp;</td>
+                                </tr>
+                                <tr height="4"><td height="4"></td></tr>
+                              </table>
+                              <!-- POPULAR DESC -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="276">
+                                <tr>
+                                  <td align="left">
+                                    <span style="color: #7E7E7E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px; line-height: 11px;">
+                                      <!--{{popular_desc_02}}... <a href="{{popular_url_02}}" style="color: #49A0D9; font-weight: bold; text-decoration: underline;"><strong>Read&nbsp;More</strong></a>-->
+                                      Integer massa quam, malesuada non rutrum vitae, condimentum a turpis. Vivamus commodo, urna quis feugiat sodales, lacus massa ultricies. <a href="{{popular_url_01}}" style="color: #49A0D9; font-weight: bold; text-decoration: underline;"><strong>Read&nbsp;More</strong></a>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr height="20"><td height="20" style="height: 20px; line-height: 20px;">&nbsp;</td></tr>
+                    
+                    <!-- POPULAR ITEM (03) -->
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td valign="top" width="120" style="color: #F6863E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">
+                              <!-- POPULAR THUMBNAIL -->
+                              <a border="0" href="{{popular_url_03}}" style="color: transparent; text-decoration: none;">
+                                <!--<img alt="{{popular_title_03}}" border="0" height="76" width="116" src="{{popular_thumb_03}}" style="display: block; border: none; border: 2px solid #95C93D;" />-->
+                                <img alt="{{popular_title_03}}" border="0" height="76" width="116" src="https://s3.amazonaws.com/email-assets.squeebles.com/02/thumb-example-187x123.jpg" style="display: block; border: none; border: 2px solid #95C93D;" />
+                              </a>
+                            </td>
+                            <td valign="top" width="14"></td>
+                            <td valign="top" width="276">
+                              <!-- POPULAR TITLE -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <td valign="top">
+                                    <span style="color: #F6863E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 13px; line-height: 13px;">
+                                      <a href="{{popular_url_03}}" style="color: #F6863E; text-decoration: none;">
+                                        <strong>
+                                          <!--{{popular_title_03}}-->
+                                          If You Love Cute Kittens And Doll Houses, You Won’t Want To Miss This Cuteness!
+                                        </strong>
+                                      </a>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- SOLID DIVIDER -->
+                              <table border="0" cellpadding="0" cellspacing="0" height="1" width="276">
+                                <tr height="8"><td height="8"></td></tr>
+                                <tr height="1">
+                                  <td height="1" style="border-top: 1px solid #DEDEDD; height: 1px; line-height: 1px; font-size: 0;">&nbsp;</td>
+                                </tr>
+                                <tr height="4"><td height="4"></td></tr>
+                              </table>
+                              <!-- POPULAR DESC -->
+                              <table border="0" cellpadding="0" cellspacing="0" width="276">
+                                <tr>
+                                  <td align="left">
+                                    <span style="color: #7E7E7E; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px; line-height: 11px;">
+                                      <!--{{popular_desc_03}}... <a href="{{popular_url_03}}" style="color: #49A0D9; font-weight: bold; text-decoration: underline;"><strong>Read&nbsp;More</strong></a>-->
+                                      Integer massa quam, malesuada non rutrum vitae, condimentum a turpis. Vivamus commodo, urna quis feugiat sodales, lacus massa ultricies. <a href="{{popular_url_01}}" style="color: #49A0D9; font-weight: bold; text-decoration: underline;"><strong>Read&nbsp;More</strong></a>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr height="20"><td height="20" style="height: 20px; line-height: 20px;">&nbsp;</td></tr>
+                    
+                    <!-- HOMEPAGE CTA -->
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="408">
+                          <tr>
+                            <td width="60"></td>
+                            <td width="288">
+                              <table align="center" bgcolor="#F5853F" cellpadding="6" cellspacing="0" height="100%" width="100%" style="border: 1px solid #AB6135; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                <tr>
+                                  <td align="center" valign="middle" style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; text-transform: uppercase;">
+                                    <a href="{{home_link}}" style="color: #FFFFFF; text-decoration: none;">
+                                      <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; text-transform: uppercase;">
+                                        <strong>
+                                          <!--{{homepage_cta}}-->
+                                          Want to watch more videos like these?
+                                        </strong>
+                                      </span>
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td width="60"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            
+            <!-- BOTTOM SPACER - (450x15) -->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" height="15" width="450">
+              <tr>
+                <td height="15"></td>
+              </tr>
+            </table>
+            
+            <!-- FOOTER - (100%x%) -->
+            <table align="center" border="0" bgcolor="#DDDDDE" cellpadding="0" cellspacing="0" width="100%" style="border-top: 2px solid #A4A4A4;">
+              <tr height="14"><td height="14"></td></tr>
+              <tr>
+                <td align="center" valign="top">
+                  <!-- FOOTER CONTENT - (430x120) -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="430">
+                    <tr>
+                      <td style="color: #222322; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px;">
+                        <span style="color: #222322; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px;">
+                          <strong>Reach out to us!</strong>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr><td height="8" style="font-size: 8px; line-height: 8px;">&nbsp;</td></tr>
+                    <tr>
+                      <td style=" color: #222322; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                        <span class="appleLinks" style="color: #222322; font-size: 11px; font-weight: normal; line-height: 11px;">
+                          ReferenceAdvisor<br/>
+                          198 Tremont Street Suite 446<br/>
+                          Boston, MA 02116<br/>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr><td height="3" style="font-size: 8px; line-height: 8px;"></td></tr>
+                    <tr>
+                      <td style="color: #222322; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                        <a href="mailto:unsub@squeebles.com" style="color: #222322; text-decoration: none;">
+                          <span style="color: #222322;">
+                            unsub@squeebles.com
+                          </span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr><td height="12" style="font-size: 8px; line-height: 8px;">&nbsp;</td></tr>
+                    <tr>
+                      <td style="color: #222322; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                        <span style="color: #222322; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                          Don’t want these emails? <a href="{{unsubscribe_link}}" style="color: #222322; text-decoration: underline;"><span style="color: #222322;">You can unsubscribe</span></a>.
+                        </span>
+                      </td>
+                    </tr>
+                    <tr><td height="12" style="font-size: 8px; line-height: 8px;">&nbsp;</td></tr>
+                    <tr>
+                      <td style="color: #222322; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                        <span style="color: #222322; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                          &copy; Copyright <!--{{current_year}}-->2014 &bull; This is a marketing message.
+                        </span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr height="14"><td height="14"></td></tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

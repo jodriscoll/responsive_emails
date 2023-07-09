@@ -1,0 +1,939 @@
+  <!DOCTYPE html>
+  <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+      <title>Seat Snap!</title>
+      <style type="text/css">
+        .ReadMsgBody {width: 100% !important;}
+        body {
+          background-color: #062376 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          width: 100% !important;
+        }
+        div, p, a, li, td {-webkit-text-size-adjust: none !important;}
+        
+        /* Outlook 2013 Spacing Fix */
+        table td {border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
+
+        /* Outlook.com Line Height Fix */
+        .ExternalClass * {line-height: 100%}
+
+        /* iOS Address Link Handling */
+        .appleLinks a {
+          color: #FFFFFF !important;
+          text-decoration: none !important;
+        }
+        
+        /* iPhone Truncation Fix */
+        .fake_css {
+          width: 100%;
+          display: block;
+          -webkit-text-size-adjust: none;
+          margin: 1em 0;
+          color: black;
+          text-decoration: none;
+          border-bottom: none; /* first */
+          background: none;  /* first */
+          padding-bottom: 0px;
+          padding-left: 0px;
+          padding-right: 0px;
+          background: none; /* second */
+          border-bottom: thin; /* second */
+          border-bottom-style: double;
+          background-repeat: repeat;
+          border-left-color: #C06C06;
+          background-attachment: scroll;
+          border: thin;
+          page-break-before: auto; /* first */
+          page-break-before: avoid; /* second */
+          page-break-inside: inherit;
+          azimuth: center-left;
+          vertical-align: inherit;
+          font-stretch: extra-condensed;
+          font-size-adjust: none;
+          list-style-image: none;
+          counter-reset: none;
+          letter-spacing: normal;
+          empty-cells: inherit;
+          elevation: higher;
+        }
+      </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body bgcolor="#062376" border="0" cellpadding="0" cellspacing="0" style="background-color: #062376; margin: 0; padding:0;">
+      <div style="background-color: #062376;">
+        <!--[if gte mso 9]>
+        <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+          <v:fill type="tile" src="imgs/patterntile.jpg" color="#062376"/>
+        </v:background>
+        <![endif]-->
+        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+          <tr>
+            <td align="left" background="imgs/patterntile.jpg" valign="top">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" width="620">
+                <tr>
+                  <td border="0" width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                  <td border="0" width="600" style="border: none; margin: 0; padding: 0;">
+                    <!-- HEADER -->
+                    <table align="center" border="0" bgcolor="transparent" cellpadding="0" cellspacing="0" width="600">
+                      <tr height="15"><td height="15" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                      <!-- UNSUBSCRIBE -->
+                      <tr>
+                        <td align="right">
+                          <span style="color: #C3C3E2; font-family: Helvetica, Arial, sans-serif; font-size: 11px;">
+                            To be removed from these emails, please <a href="#" style="color: #C3C3E2; font-family: Helvetica, Arial, sans-serif; text-decoration: underline;"><span style="color: #C3C3E2;">unsubscribe here</span></a>.
+                          </span>
+                        </td>
+                      </tr>
+                      <tr height="8"><td height="8" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                      <tr>
+                        <td border="0" style="border: none; margin: 0; padding: 0;">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <!-- HEADER LOGO -->
+                              <td border="0" width="176" style="color: #FFFFFF; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px;">
+                                <a border="0" href="#" style="color: transparent; text-decoration: none; border: 0; display: block;">
+                                  <img alt="seat snap!" src="imgs/topimage.png" height="42" width="176" style="display: block; border: none;"/>
+                                </a>
+                              </td>
+                              <td width="24" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                              <!-- NAVIGATION -->
+                              <td border="0" style="border: none; margin: 0; padding: 0;">
+                                <table border="0" align="right" bgcolor="#DB8128" cellpadding="0" cellspacing="0" width="400" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                  <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                  <tr>
+                                    <td border="0" style="border: none; margin: 0; padding: 0;">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="400">
+                                        <tr>
+                                          <td align="center" valign="middle" width="82">
+                                            <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px;">sports</span>
+                                          </td>
+                                          <td align="center" valign="middle" width="26" style="color: #FFFFFF;">
+                                            <span style="font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">&bull;</span>
+                                          </td>
+                                          <td align="center" valign="middle" width="80">
+                                            <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px;">concerts</span>
+                                          </td>
+                                          <td align="center" valign="middle" width="26" style="color: #FFFFFF;">
+                                            <span style="font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">&bull;</span>
+                                          </td>
+                                          <td align="center" valign="middle" width="80">
+                                            <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px;">broadway</span>
+                                          </td>
+                                          <td align="center" valign="middle" width="26" style="color: #FFFFFF;">
+                                            <span style="font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">&bull;</span>
+                                          </td>
+                                          <td align="center" valign="middle" width="80">
+                                            <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px;">comedy</span>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr height="15"><td height="15" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                    </table>
+
+                    <!-- FEATURED EVENT -->
+                    <table align="center" bgcolor="#3DACD8" border="0" cellpadding="0" cellspacing="0" width="600">
+                      <tr height="15"><td bgcolor="#3DACD8" height="15" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                      <tr>
+                        <td border="0" width="600" style="border: none; margin: 0; padding: 0;">
+                          <table border="0" cellpadding="0" cellspacing="0" width="600">
+                            <tr>
+                              <td bgcolor="#3DACD8" valign="top" width="24" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                              <td bgcolor="#EEEEF8" valign="top" width="552">
+                                <table border="0" cellpadding="0" cellspacing="0" width="552">
+                                  <!-- HEADING TEXT -->
+                                  <tr>
+                                    <td bgcolor="#3DACD8">
+                                      <table border="0" cellpadding="0" cellspacing="0" height="40" width="100%">
+                                        <tr>
+                                          <!-- A1 -->
+                                          <td border="0" valign="bottom" width="10" style="border: none; margin: 0; padding: 0;">
+                                            <table border="0" bgcolor="#EEEEF8" cellpadding="0" cellspacing="0" height="20" width="10" style="-webkit-border-radius: 6px 0 0 0; -moz-border-radius: 6px 0 0 0; -ms-border-radius: 6px 0 0 0; -o-border-radius: 6px 0 0 0; border-radius: 6px 0 0 0;">
+                                              <tr height="20"><td border="0" height="20" width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                            </table>
+                                          </td>
+                                          <!-- B1 -->
+                                          <td border="0" width="125" style="border: none; margin: 0; padding: 0;">
+                                            <table cellpadding="0" cellspacing="0" height="5" width="125">
+                                              <tr>
+                                                <td border="0" width="125" style="border: none; margin: 0; padding: 0;">
+                                                  <table align="left" border="0" bgcolor="#E15252" cellpadding="0" cellspacing="0" height="35" width="125" style="-webkit-border-radius: 4px 4px 0 0; -moz-border-radius: 4px 4px 0 0; -ms-border-radius: 4px 4px 0 0; -o-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;">
+                                                    <tr height="5"><td height="5" width="125" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                    <tr>
+                                                      <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="125">
+                                                          <tr>
+                                                            <td align="center" border="0" valign="middle" width="125">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">Top Ticket</span>
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td border="0" width="125" style="border: none; margin: 0; padding: 0;">
+                                                  <table bgcolor="#EEEEF8" cellpadding="0" cellspacing="0" height="5" width="125">
+                                                    <tr>
+                                                      <td border="0" width="125" style="border: none; margin: 0; padding: 0;">
+                                                        <table border="0" bgcolor="#E15252" cellpadding="0" cellspacing="0" height="5" width="125" style="-webkit-border-radius: 0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -ms-border-radius: 0 0 4px 4px; -o-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;">
+                                                          <tr height="5"><td height="5" width="125" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <!-- C1 -->
+                                          <td border="0" valign="bottom" width="417" style="border: none; margin: 0; padding: 0;">
+                                            <table bgcolor="#EEEEF8" cellpadding="0" cellspacing="0" height="20" width="417" style="-webkit-border-radius: 0 6px 0 0; -moz-border-radius: 0 6px 0 0; -ms-border-radius: 0 6px 0 0; -o-border-radius: 0 6px 0 0; border-radius: 0 6px 0 0;">
+                                              <tr height="20"><td border="0" height="20" width="417" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                  
+                                  <!-- FEATURED EVENT INFORMATION -->
+                                  <tr>
+                                    <td border="0" style="border: none; margin: 0; padding: 0;">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                          <td border="0" width="20" style="border: none; margin: 0; padding: 0;">&nbsp;</td>
+                                          <!-- CALENDAR BADGE -->
+                                          <td border="0" width="84">
+                                            <table bgcolor="#192D7F" cellpadding="0" cellspacing="0" width="84" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                              <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                              <tr>
+                                                <td align="center" valign="middle" width="82">
+                                                  <a border="0" href="#" style="border: 0; color: #FFFFFF; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; text-decoration: none;">
+                                                    <span style="font-size: 14px; line-height: 26px;">Weds</span><br/>
+                                                    <span style="font-size: 28px; line-height: 26px;">4/26</span><br/>
+                                                    <span style="font-size: 14px; line-height: 26px;">7:00PM</span>
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                              <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                            </table>
+                                          </td>
+                                          <!-- SEPARATOR -->
+                                          <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                          <!-- EVENT DESCRIPTION -->
+                                          <td width="428" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                              <tr>
+                                                <td border="0" style="border: none; margin: 0; padding: 0;">
+                                                  <a border="0" href="#" style="border: 0; color: #192D7F; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 26px; text-decoration: none;">
+                                                    <span style="color: #192D7F; font-weight: bold;">Boston Red Sox at New York Yankees</span>
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                              <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                              <tr>
+                                                <td border="0" style="border: none; margin: 0; padding: 0;">
+                                                  <a border="0" href="#" style="border: 0; color: #3D3E44; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; text-decoration: none;">
+                                                    <span style="color: #3D3E44;">Fenway Park</span>
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                              <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                              <tr>
+                                                <td border="0" style="border: none; margin: 0; padding: 0;">
+                                                  <table border="0" cellpadding="0" cellspacing="0" width="428">
+                                                    <tr>
+                                                      <td border="0" width="140" style="border: none; margin: 0; padding: 0;">
+                                                        <span style="color: #3D3E44; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">Popularity Score:</span>
+                                                      </td>
+                                                      <td border="0" width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                      <td border="0" width="20" style="border: none; margin: 0; padding: 0;">
+                                                        <table align="center" bgcolor="#F48484" border="0" cellpadding="0" cellspacing="0" width="20" style="border: none; margin: 0; padding: 0; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px;">
+                                                          <tr>
+                                                            <td border="0" style="border: none; margin: 0; padding: 0;">
+                                                              <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; line-height: 12px;">&nbsp;89&nbsp;</span>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                      <td border="0" width="45" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                      <td border="0" width="213">
+                                                        <table align="left" bgcolor="#DB8128" cellpadding="0" cellspacing="0" style="border: 1px solid #BF8819; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                                          <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                          <tr>
+                                                            <td>
+                                                              <table border="0" cellpadding="0" cellspacing="0" width="140">
+                                                                <tr>
+                                                                  <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                                  <td align="left" valign="middle">
+                                                                    <a href="{{featured_link}}" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                      <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 15px;">Get&nbsp;Tickets</span>
+                                                                    </a>
+                                                                  </td>
+                                                                  <td align="right" border="0" width="35">
+                                                                    <a href="{{featured_link}}" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                      <img border="0" height="20" width="20" src="imgs/buttonicon.png" style="display: block; border: none; border: none;"/>
+                                                                    </a>
+                                                                  </td>
+                                                                  <td width="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                            </td>
+                                                          </tr>
+                                                          <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr height="30"><td height="30" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                </table>
+                              </td>
+                              <td bgcolor="#3DACD8" valign="top" width="24" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td border="0" height="88" width="600" style="border: none; margin: 0; padding: 0;">
+                          <table border="0" cellpadding="0" cellspacing="0" width="600" style="min-width: 600px; width: 600px;">
+                            <tr>
+                              <td border="0" height="88" width="300" style="border: none; margin: 0; padding: 0;">
+                                <img src="imgs/crowdheadL.jpg" height="88" width="300" style="border: none; display: block; height: 88px; width: 300px;"/>
+                              </td>
+                              <td border="0" height="88" width="300" style="border: none; margin: 0; padding: 0;">
+                                <img src="imgs/crowdheadR.jpg" height="88" width="300" style="border: none; display: block; height: 88px; width: 300px;"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- BODY SPACER -->
+                    <table align="center" border="0" bgcolor="transparent" cellpadding="0" cellspacing="0" width="600">
+                      <tr height="10"><td height="10" width="600" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                    </table>
+
+                    <!-- BODY CONTENT -->
+                    <table align="center" border="0" bgcolor="#E1E1EF" cellpadding="0" cellspacing="0" width="600">
+                      <!-- HEADLINE TEXT -->
+                      <tr>
+                        <td border="0" style="border: none; margin: 0; padding: 0;">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr height="20"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                            <tr>
+                              <td border="0" style="border: none; margin: 0; padding: 0;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td border="0" width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td border="0" width="580" style="border: none; margin: 0; padding: 0;">
+                                      <a href="#" style="color: #192D7F; display: block; text-decoration: none;">
+                                        <span style="color: #192D7F; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 38px; text-shadow: 1px 1px 0 #FFFFFF;">On Sale Today</span>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr height="20"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <!-- EVENT (01) -->
+                      <tr>
+                        <td border="0" style="border: none; margin: 0; padding: 0;">
+                          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" style="border-top: 1px solid #BCBCD8; border-bottom: 1px solid #BCBCD8;">
+                            <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                            <tr>
+                              <td border="0" style="border: none; margin: 0; padding: 0;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td border="0" width="25" style="border: none; margin: 0; padding: 0;">&nbsp;</td>
+                                    <td border="0" width="84">
+                                      <table bgcolor="#192D7F" cellpadding="0" cellspacing="0" width="84" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td align="center" valign="middle" width="82">
+                                            <a border="0" href="#" style="border: 0; color: #FFFFFF; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; text-decoration: none;">
+                                              <span style="font-size: 14px; line-height: 26px;">Thur</span><br/>
+                                              <span style="font-size: 28px; line-height: 26px;">4/20</span><br/>
+                                              <span style="font-size: 14px; line-height: 26px;">7:00PM</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                      </table>
+                                    </td>
+                                    <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td bgcolor="#BCBCD8" border="0" height="100%" width="1" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                    <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td width="450" valign="top">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <a border="0" href="#" style="border: 0; color: #192D7F; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 26px; text-decoration: none;">
+                                              <span style="color: #192D7F; font-weight: bold;">Justin Bieber</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <a border="0" href="#" style="border: 0; color: #3D3E44; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; text-decoration: none;">
+                                              <span style="color: #3D3E44;">TD Garden</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="450">
+                                              <tr>
+                                                <td border="0" width="140" style="border: none; margin: 0; padding: 0;">
+                                                  <span style="color: #3D3E44; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">Popularity Score:</span>
+                                                </td>
+                                                <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                <td border="0" width="20" style="border: none; margin: 0; padding: 0;">
+                                                  <table align="center" bgcolor="#F48484" border="0" cellpadding="0" cellspacing="0" width="20" style="border: none; margin: 0; padding: 0; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px;">
+                                                    <tr>
+                                                      <td border="0" style="border: none; margin: 0; padding: 0;">
+                                                        <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; line-height: 12px;">&nbsp;20&nbsp;</span>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                                <td width="50" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                <td width="240">
+                                                  <table align="left" bgcolor="#DB8128" cellpadding="0" cellspacing="0" style="border: 1px solid #BF8819; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                                    <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                    <tr>
+                                                      <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="140">
+                                                          <tr>
+                                                            <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                            <td align="left" valign="middle">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 15px;">Get&nbsp;Tickets</span>
+                                                              </a>
+                                                            </td>
+                                                            <td align="right" border="0" width="35">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <img border="0" height="20" width="20" src="imgs/buttonicon.png" style="display: block; border: none; border: none;"/>
+                                                              </a>
+                                                            </td>
+                                                            <td width="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                      
+                      <!-- EVENT (02) -->
+                      <tr>
+                        <td border="0" style="border: none; margin: 0; padding: 0;">
+                          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" style="border-top: 1px solid #BCBCD8; border-bottom: 1px solid #BCBCD8;">
+                            <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                            <tr>
+                              <td border="0" style="border: none; margin: 0; padding: 0;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td border="0" width="25" style="border: none; margin: 0; padding: 0;">&nbsp;</td>
+                                    <td border="0" width="84">
+                                      <table bgcolor="#192D7F" cellpadding="0" cellspacing="0" width="84" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td align="center" valign="middle" width="82">
+                                            <a border="0" href="#" style="border: 0; color: #FFFFFF; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; text-decoration: none;">
+                                              <span style="font-size: 14px; line-height: 26px;">Fri</span><br/>
+                                              <span style="font-size: 28px; line-height: 26px;">4/21</span><br/>
+                                              <span style="font-size: 14px; line-height: 26px;">7:30PM</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                      </table>
+                                    </td>
+                                    <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td bgcolor="#BCBCD8" border="0" height="100%" width="1" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                    <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td width="450" valign="top">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <a border="0" href="#" style="border: 0; color: #192D7F; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 26px; text-decoration: none;">
+                                              <span style="color: #192D7F; font-weight: bold;">Fleetwood Mac</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <a border="0" href="#" style="border: 0; color: #3D3E44; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; text-decoration: none;">
+                                              <span style="color: #3D3E44;">Xfinity Center</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="450">
+                                              <tr>
+                                                <td border="0" width="140" style="border: none; margin: 0; padding: 0;">
+                                                  <span style="color: #3D3E44; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">Popularity Score:</span>
+                                                </td>
+                                                <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                <td border="0" width="20" style="border: none; margin: 0; padding: 0;">
+                                                  <table align="center" bgcolor="#F48484" border="0" cellpadding="0" cellspacing="0" width="20" style="border: none; margin: 0; padding: 0; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px;">
+                                                    <tr>
+                                                      <td border="0" style="border: none; margin: 0; padding: 0;">
+                                                        <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; line-height: 12px;">&nbsp;40&nbsp;</span>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                                <td width="50" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                <td width="240">
+                                                  <table align="left" bgcolor="#DB8128" cellpadding="0" cellspacing="0" style="border: 1px solid #BF8819; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                                    <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                    <tr>
+                                                      <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="140">
+                                                          <tr>
+                                                            <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                            <td align="left" valign="middle">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 15px;">Get&nbsp;Tickets</span>
+                                                              </a>
+                                                            </td>
+                                                            <td align="right" border="0" width="35">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <img border="0" height="20" width="20" src="imgs/buttonicon.png" style="display: block; border: none; border: none;"/>
+                                                              </a>
+                                                            </td>
+                                                            <td width="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+
+                      <!-- EVENT (03) -->
+                      <tr>
+                        <td border="0" style="border: none; margin: 0; padding: 0;">
+                          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" style="border-top: 1px solid #BCBCD8; border-bottom: 1px solid #BCBCD8;">
+                            <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                            <tr>
+                              <td border="0" style="border: none; margin: 0; padding: 0;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td border="0" width="25" style="border: none; margin: 0; padding: 0;">&nbsp;</td>
+                                    <td border="0" width="84">
+                                      <table bgcolor="#192D7F" cellpadding="0" cellspacing="0" width="84" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td align="center" valign="middle" width="82">
+                                            <a border="0" href="#" style="border: 0; color: #FFFFFF; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; text-decoration: none;">
+                                              <span style="font-size: 14px; line-height: 26px;">Thur</span><br/>
+                                              <span style="font-size: 28px; line-height: 26px;">4/20</span><br/>
+                                              <span style="font-size: 14px; line-height: 26px;">7:00PM</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                      </table>
+                                    </td>
+                                    <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td bgcolor="#BCBCD8" border="0" height="100%" width="1" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                    <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td width="450" valign="top">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <a border="0" href="#" style="border: 0; color: #192D7F; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 26px; text-decoration: none;">
+                                              <span style="color: #192D7F; font-weight: bold;">Justin Bieber</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <a border="0" href="#" style="border: 0; color: #3D3E44; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; text-decoration: none;">
+                                              <span style="color: #3D3E44;">TD Garden</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="450">
+                                              <tr>
+                                                <td border="0" width="140" style="border: none; margin: 0; padding: 0;">
+                                                  <span style="color: #3D3E44; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">Popularity Score:</span>
+                                                </td>
+                                                <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                <td border="0" width="20" style="border: none; margin: 0; padding: 0;">
+                                                  <table align="center" bgcolor="#F48484" border="0" cellpadding="0" cellspacing="0" width="20" style="border: none; margin: 0; padding: 0; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px;">
+                                                    <tr>
+                                                      <td border="0" style="border: none; margin: 0; padding: 0;">
+                                                        <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; line-height: 12px;">&nbsp;20&nbsp;</span>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                                <td width="50" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                <td width="240">
+                                                  <table align="left" bgcolor="#DB8128" cellpadding="0" cellspacing="0" style="border: 1px solid #BF8819; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                                    <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                    <tr>
+                                                      <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="140">
+                                                          <tr>
+                                                            <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                            <td align="left" valign="middle">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 15px;">Get&nbsp;Tickets</span>
+                                                              </a>
+                                                            </td>
+                                                            <td align="right" border="0" width="35">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <img border="0" height="20" width="20" src="imgs/buttonicon.png" style="display: block; border: none; border: none;"/>
+                                                              </a>
+                                                            </td>
+                                                            <td width="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+
+                      <!-- EVENT (04) -->
+                      <tr>
+                        <td border="0" style="border: none; margin: 0; padding: 0;">
+                          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" style="border-top: 1px solid #BCBCD8; border-bottom: 1px solid #BCBCD8;">
+                            <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                            <tr>
+                              <td border="0" style="border: none; margin: 0; padding: 0;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td border="0" width="25" style="border: none; margin: 0; padding: 0;">&nbsp;</td>
+                                    <td border="0" width="84">
+                                      <table bgcolor="#192D7F" cellpadding="0" cellspacing="0" width="84" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td align="center" valign="middle" width="82">
+                                            <a border="0" href="#" style="border: 0; color: #FFFFFF; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; text-decoration: none;">
+                                              <span style="font-size: 14px; line-height: 26px;">Fri</span><br/>
+                                              <span style="font-size: 28px; line-height: 26px;">4/21</span><br/>
+                                              <span style="font-size: 14px; line-height: 26px;">7:30PM</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                      </table>
+                                    </td>
+                                    <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td bgcolor="#BCBCD8" border="0" height="100%" width="1" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                    <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td width="450" valign="top">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <a border="0" href="#" style="border: 0; color: #192D7F; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 26px; text-decoration: none;">
+                                              <span style="color: #192D7F; font-weight: bold;">Fleetwood Mac</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <a border="0" href="#" style="border: 0; color: #3D3E44; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; text-decoration: none;">
+                                              <span style="color: #3D3E44;">Xfinity Center</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="450">
+                                              <tr>
+                                                <td border="0" width="140" style="border: none; margin: 0; padding: 0;">
+                                                  <span style="color: #3D3E44; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">Popularity Score:</span>
+                                                </td>
+                                                <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                <td border="0" width="20" style="border: none; margin: 0; padding: 0;">
+                                                  <table align="center" bgcolor="#F48484" border="0" cellpadding="0" cellspacing="0" width="20" style="border: none; margin: 0; padding: 0; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px;">
+                                                    <tr>
+                                                      <td border="0" style="border: none; margin: 0; padding: 0;">
+                                                        <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; line-height: 12px;">&nbsp;40&nbsp;</span>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                                <td width="50" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                <td width="240">
+                                                  <table align="left" bgcolor="#DB8128" cellpadding="0" cellspacing="0" style="border: 1px solid #BF8819; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                                    <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                    <tr>
+                                                      <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="140">
+                                                          <tr>
+                                                            <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                            <td align="left" valign="middle">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 15px;">Get&nbsp;Tickets</span>
+                                                              </a>
+                                                            </td>
+                                                            <td align="right" border="0" width="35">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <img border="0" height="20" width="20" src="imgs/buttonicon.png" style="display: block; border: none; border: none;"/>
+                                                              </a>
+                                                            </td>
+                                                            <td width="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+
+                      <!-- EVENT (05) -->
+                      <tr>
+                        <td border="0" style="border: none; margin: 0; padding: 0;">
+                          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" style="border-top: 1px solid #BCBCD8; border-bottom: 1px solid #BCBCD8;">
+                            <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                            <tr>
+                              <td border="0" style="border: none; margin: 0; padding: 0;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td border="0" width="25" style="border: none; margin: 0; padding: 0;">&nbsp;</td>
+                                    <td border="0" width="84">
+                                      <table bgcolor="#192D7F" cellpadding="0" cellspacing="0" width="84" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td align="center" valign="middle" width="82">
+                                            <a border="0" href="#" style="border: 0; color: #FFFFFF; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; text-decoration: none;">
+                                              <span style="font-size: 14px; line-height: 26px;">Thur</span><br/>
+                                              <span style="font-size: 28px; line-height: 26px;">4/20</span><br/>
+                                              <span style="font-size: 14px; line-height: 26px;">7:00PM</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                      </table>
+                                    </td>
+                                    <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td bgcolor="#BCBCD8" border="0" height="100%" width="1" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                    <td width="20" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                    <td width="450" valign="top">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <a border="0" href="#" style="border: 0; color: #192D7F; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 26px; text-decoration: none;">
+                                              <span style="color: #192D7F; font-weight: bold;">Justin Bieber</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <a border="0" href="#" style="border: 0; color: #3D3E44; display: block; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; text-decoration: none;">
+                                              <span style="color: #3D3E44;">TD Garden</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                        <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                        <tr>
+                                          <td border="0" style="border: none; margin: 0; padding: 0;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="450">
+                                              <tr>
+                                                <td border="0" width="140" style="border: none; margin: 0; padding: 0;">
+                                                  <span style="color: #3D3E44; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px;">Popularity Score:</span>
+                                                </td>
+                                                <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                <td border="0" width="20" style="border: none; margin: 0; padding: 0;">
+                                                  <table align="center" bgcolor="#F48484" border="0" cellpadding="0" cellspacing="0" width="20" style="border: none; margin: 0; padding: 0; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px;">
+                                                    <tr>
+                                                      <td border="0" style="border: none; margin: 0; padding: 0;">
+                                                        <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; line-height: 12px;">&nbsp;20&nbsp;</span>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                                <td width="50" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                <td width="240">
+                                                  <table align="left" bgcolor="#DB8128" cellpadding="0" cellspacing="0" style="border: 1px solid #BF8819; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;">
+                                                    <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                    <tr>
+                                                      <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="140">
+                                                          <tr>
+                                                            <td width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                            <td align="left" valign="middle">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <span style="color: #FFFFFF; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 15px;">Get&nbsp;Tickets</span>
+                                                              </a>
+                                                            </td>
+                                                            <td align="right" border="0" width="35">
+                                                              <a href="#" style="color: #FFFFFF; display: block; text-decoration: none;">
+                                                                <img border="0" height="20" width="20" src="imgs/buttonicon.png" style="display: block; border: none; border: none;"/>
+                                                              </a>
+                                                            </td>
+                                                            <td width="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr height="5"><td height="5" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr height="10"><td height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <!-- BOTTOM SPACER -->
+                      <tr height="40"><td height="40" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                    </table>
+                            
+                    <!-- FOOTER -->
+                    <table align="center" border="0" bgcolor="transparent" cellpadding="0" cellspacing="0" width="100%">
+                      <tr height="10"><td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+                      <tr>
+                        <td align="center" valign="top">
+                          <table border="0" cellpadding="0" cellspacing="0" width="600">
+                            <tr>
+                              <td align="left">
+                                <span class="appleLinks" style="color: #C3C3E2; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">Brand Name | 123 Street Avenue, Suite #123 | Boston, MA 01234</span>
+                              </td>
+                            </tr>
+                            <tr height="5"><td height="5" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+                            <tr>
+                              <td align="left">
+                                <span style="color: #C3C3E2; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">
+                                  <a href="#" style="color: #77D6E0; text-decoration: none;"><span style="color: #77D6E0;">Unsubscribe here</span></a>. We're sorry to see you go!
+                                </span>
+                              </td>
+                            </tr>
+                            <tr height="5"><td height="5" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+                            <tr>
+                              <td align="left">
+                                <span style="color: #C3C3E2; font-family: Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 11px;">&copy; Copyright 2014. This is a marketing message.</span>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr height="10"><td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+                    </table>
+                  </td>
+                  <td border="0" width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </body>
+  </html>

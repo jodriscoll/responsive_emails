@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Degree Hunting</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+      /* Hotmail background image fix */
+      .ReadMsgBody {width: 100% !important;}
+
+      /* Set global defaults on body */
+      body {background-color: #132960; margin: 0 !important; padding: 0 !important; width: 100% !important;}
+
+      /* Successfully hide the preheader message */
+      .preheader {display: none !important; font-size: 0 !important; height: 0 !important; line-height: 0 !important; margin: 0 !important; max-height: 0 !important; mso-hide: all; opacity: 0 !important; padding: 0 !important; width: 0 !important;}
+
+      /* Fixes iOS scaling and Chrome typeface aliasing */
+      div, p, span, a, li, td {-webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important;}
+
+      /* Outlook 2013 Spacing Fix */
+      table td {border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
+
+      /* Outlook.com Line Height Fix */
+      .ExternalClass * {line-height: 100%}
+
+      /* iOS Address Link Handling */
+      .appleLinks a {color: #BECCF0 !important; text-decoration: none !important;}
+      
+      /* iPhone Truncation Fix */
+      .fake_css {
+        width: 100%; display: block; -webkit-text-size-adjust: none; margin: 1em 0; color: black; text-decoration: none;
+        border-bottom: none; /* first */
+        background: none;  /* first */
+        padding-bottom: 0px; padding-left: 0px; padding-right: 0px;
+        background: none; /* second */
+        border-bottom: thin; /* second */
+        border-bottom-style: double; background-repeat: repeat; border-left-color: #C06C06; background-attachment: scroll; border: thin;
+        page-break-before: auto; /* first */
+        page-break-before: avoid; /* second */
+        page-break-inside: inherit; 
+        azimuth: center-left; vertical-align: inherit; font-stretch: extra-condensed; font-size-adjust: none; list-style-image: none; counter-reset: none; letter-spacing: normal; empty-cells: inherit; elevation: higher;
+      }
+
+      /* ============== */
+      /* Tablet Devices */
+      /* ============== */
+      @media only screen and (max-width: 600px) {
+        /* LAYOUT */
+        td[class="spacer"],
+        img[class="spacer"]       {min-width: 400px !important; width: 400px !important;}
+        table[class="device560"]  {width: 400px !important;}
+        td[class="device540"],
+        table[class="device540"]  {width: 380px !important;}
+        table[class="device500"]  {width: 340px !important;}
+        table[class="device420"]  {width: 280px !important;}
+        table[class="device350"]  {width: 300px !important;}
+        td[class="custom500"]     {padding-top: 14px !important; width: 340px !important;}
+
+        /* MEDIA */
+        img[class="device560"]    {width: 400px !important;}
+        img[class="device540"]    {height: 311px !important; width: 400px !important;}
+        img[class="headline"]     {height: 40px !important; width: 280px !important;}
+        img[class="subhead"]      {height: 25px !important; width: 300px !important;}
+
+        /* BUTTON ROWS */
+        td[class="column"]        {float: left !important; padding-bottom: 10px !important; width: 380px !important;}
+        td[class="rmv"]           {display: none !important;}
+        table[class="buttons"]    {width: 380px !important;}
+      }
+
+      /* ============== */
+      /* Mobile Devices */
+      /* ============== */
+      @media only screen and (max-width: 480px) {
+        /* LAYOUT */
+        td[class="spacer"],
+        img[class="spacer"]       {min-width: 360px !important; width: 340px !important;}
+        table[class="device560"]  {width: 340px !important;}
+        td[class="device540"],
+        table[class="device540"]  {width: 320px !important;}
+        table[class="device500"]  {width: 300px !important;}
+        table[class="device420"]  {width: 280px !important;}
+        table[class="device350"]  {width: 240px !important;}
+        td[class="custom500"]     {padding-top: 14px !important; width: 300px !important;}
+
+        /* MEDIA */
+        td[class="mobile"]        {clear: both !important; float: left !important; padding-bottom: 6px !important; text-align: center !important; width: 320px !important;}
+        img[class="mobile"]       {display: inline-block !important; text-align: center !important;}
+        img[class="device560"]    {width: 340px !important;}
+        img[class="device540"]    {height: 249px !important; width: 320px !important;}
+        img[class="headline"]     {height: 34px !important; width: 240px !important;}
+        img[class="subhead"]      {height: 21px !important; width: 260px !important;}
+
+        /* BUTTON ROWS */
+        td[class="column"]        {float: left !important; padding-bottom: 10px !important; width: 300px !important;}
+        td[class="rmv"]           {display: none !important;}
+        table[class="buttons"]    {width: 300px !important;}
+      }
+    </style>
+  </head>
+  <body bgcolor="#132960" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0;">
+    <!-- PREHEADER TEXT -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" height="0" width="0" style="border: 0; height: 0; mso-hide: all; width: 0;">
+      <tr>
+        <td border="0" height="0" width="0" style="border: 0; height: 0; mso-hide: all; width: 0;">
+          <span class="preheader" style="display: none !important; font-size: 0 !important; height: 0 !important; line-height: 0 !important; margin: 0 !important; max-height: 0 !important; mso-hide: all !important; opacity: 0 !important; padding: 0 !important; width: 0 !important;">Find top rated classes and degree programs in your area today. Our team reviews thousands of programs to find the best match for you.</span>
+        </td>
+      </tr>
+    </table>
+    <!-- TEMPLATE WRAPPER -->
+    <table align="center" bgcolor="#132960" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr><td height="1" width="560" class="spacer"><img src="imgs/spacer.gif" height="1" width="560" class="spacer" style="border: 0; display: block; min-width: 560px;"/></td></tr>
+      <tr>
+        <td>
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="560" class="device560">
+            <tr>
+              <td border="0" width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+              <td border="0" width="540" style="border: none; margin: 0; padding: 0;">
+                <!-- HEADER -->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="540" class="device540">
+                  <tr height="18"><td height="15" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                  <tr>
+                    <td border="0" style="border: none; margin: 0; padding: 0;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="left" border="0" width="270" class="mobile" style="color: #FFFFFF; font-family: Helvetica, Arial, sans-serif; font-size: 16px;"><a href="#home" style="text-decoration: none; border: none;"><img src="imgs/topimage.png" width="237" height="33" align="center" alt="Degree Hunting" class="mobile" style="display: block; border: none;"/></a></td>
+                          <td align="right" border="0" width="270" class="mobile" style="color: #BECCF0; font-family: Helvetica, Arial, sans-serif; font-size: 11px;">Don't want our emails? <a href="#unsub-top" style="color: #BECCF0; text-decoration: underline;"><span style="color: #BECCF0;">Unsubscribe here</span></a>.</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr height="15"><td height="15" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                </table>
+                <!-- INTRODUCTION -->
+                <table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="540" class="device540">
+                  <tr><td height="30"></td></tr>
+                  <!-- INTRO BRIEF -->
+                  <tr>
+                    <td align="center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="420" class="device420">
+                        <tr><td align="center" style="color: #132960; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 300;"><a href="#headline" style="text-decoration: none; border: none;"><img src="imgs/headlinetxt.png" width="323" height="46" align="center" alt="Learn More" class="headline" style="display: block; border: none;"/></a></td></tr>
+                        <tr><td height="22"></td></tr>
+                        <tr>
+                          <td>
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="350" class="device350">
+                              <tr>
+                                <td align="center" width="350" style="color: #666565; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">
+                                  <a href="#subhead" style="text-decoration: none;"><span style="color: #666565;">Find top rated classes and degree programs in your area today. Our team reviews thousands of programs to find the best match for you.</span></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr><td height="30"></td></tr>
+                        <tr>
+                          <td align="center">
+                            <table bgcolor="#A91B1B" cellpadding="0" cellspacing="0" width="286" style="border: 1px solid #7F0909; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px;">
+                              <tr>
+                                <td>
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                      <td border="0" width="100%" style="padding: 10px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td width="26"></td>
+                                            <td width="26"><a href="#cta-top" style="color: #FFFFFF; display: block; text-decoration: none;"><img alt="Search Now" src="imgs/srchico.png" height="26" width="26" style="display: block; border: none;"/></a></td>
+                                            <td width="16"></td>
+                                            <td align="left" border="0" width="196" style="font-family: Helvetica, Arial, serif; font-size: 32px;"><a href="#cta-top" style="color: #FFFFFF; display: block; text-decoration: none;"><span style="color: #FFFFFF;">Search Now</span></a></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="41"></td></tr>
+                  <!-- JUMBROTRON -->
+                  <td width="540" class="device540"><a href="#jumbo" style="color: #132960; display: block; font-size: 32px; text-decoration: none;"><img alt="Degree Hunting" src="imgs/jumbo-fem.jpg" height="420" width="540" class="device540" style="display: block; border: none;"/></a></td>
+                  <tr><td height="18"></td></tr>
+                  <!-- SUBHEADING -->
+                  <tr>
+                    <td align="center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="420" class="device420">
+                        <tr><td align="center" style="color: #132960; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 300;"><img src="imgs/subheadtxt.png" width="365" height="30" align="center" alt="Find Your Classroom" class="subhead" style="display: block; border: none;"/></td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="28"></td></tr>
+                  <!-- BUTTON ROW (01) -->
+                  <tr>
+                    <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                              <tr>
+                                <!-- R1-C1 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt01" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Nursing</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td width="20" class="rmv"></td>
+                                <!-- R1-C2 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt02" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Criminal Justice</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="20" class="rmv"></td></tr>
+                  <!-- BUTTON ROW (02) -->
+                  <tr>
+                    <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                              <tr>
+                                <!-- R2-C1 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt03" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">IT &amp; Computer Science</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td width="20" class="rmv"></td>
+                                <!-- R2-C2 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt04" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Business</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="20" class="rmv"></td></tr>
+                  <!-- BUTTON ROW (03) -->
+                  <tr>
+                    <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                              <tr>
+                                <!-- R3-C1 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt05" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Creative Arts &amp; Design</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td width="20" class="rmv"></td>
+                                <!-- R3-C2 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt06" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Legal Services</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="20" class="rmv"></td></tr>
+                  <!-- BUTTON ROW (04) -->
+                  <tr>
+                    <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                              <tr>
+                                <!-- R4-C1 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt07" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Education</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td width="20" class="rmv"></td>
+                                <!-- R4-C2 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt08" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Trade &amp; Vocational</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="20" class="rmv"></td></tr>
+                  <!-- BUTTON ROW (05) -->
+                  <tr>
+                    <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                              <tr>
+                                <!-- R5-C1 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt09" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Accounting</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td width="20" class="rmv"></td>
+                                <!-- R5-C2 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt10" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Engineering</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="20" class="rmv"></td></tr>
+                  <!-- BUTTON ROW (06) -->
+                  <tr>
+                    <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                              <tr>
+                                <!-- R6-C1 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt11" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Marketing &amp; Communications</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td width="20" class="rmv"></td>
+                                <!-- R6-C2 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt12" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Psychology</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="20" class="rmv"></td></tr>
+                  <!-- BUTTON ROW (07) -->
+                  <tr>
+                    <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                              <tr>
+                                <!-- R7-C1 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt13" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Finance</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td width="20" class="rmv"></td>
+                                <!-- R7-C2 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt14" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Public Administration</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="20" class="rmv"></td></tr>
+                  <!-- BUTTON ROW (08) -->
+                  <tr>
+                    <td>
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                              <tr>
+                                <!-- R8-C1 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt15" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Human Resources</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td width="20" class="rmv"></td>
+                                <!-- R8-C2 -->
+                                <td width="226" class="column">
+                                  <table bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="224" class="buttons" style="border: 1px solid #CFD5E4; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px;">
+                                    <tr>
+                                      <td style="padding: 15px 0;">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td border="0" width="100%">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td width="24"></td>
+                                                  <td width="12"><img alt="" src="imgs/grtrthan.png" height="18" width="12" style="display: block; border: none;"/></td>
+                                                  <td width="16"></td>
+                                                  <td align="left" border="0" height="50" width="170" style="font-family: Helvetica, Arial, serif; font-size: 21px;"><a href="#opt16" style="color: #132960; display: block; text-decoration: none;"><span style="color: #132960;">Management</span></a></td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="20" class="rmv"></td></tr>
+                  <!-- SOMETHING ELSE -->
+                  <tr>
+                    <td align="center" width="540" class="custom500">
+                      <table align="center" bgcolor="#E4E8F2" cellpadding="0" cellspacing="0" width="400" class="device500" style="border: 1px solid #CFD5E4;">
+                        <tr><td height="22"></td></tr>
+                        <tr><td align="center" style="color: #132960; font-family: Helvetica, Arial, sans-serif; font-size: 18px;">Looking for something else?</td></tr>
+                        <tr><td height="22"></td></tr>
+                        <tr>
+                          <td align="center">
+                            <table bgcolor="#A91B1B" cellpadding="0" cellspacing="0" width="280" style="border: 1px solid #7F0909; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px;">
+                              <tr>
+                                <td align="center">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="278">
+                                    <tr>
+                                      <td border="0" width="100%" style="padding: 14px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="250">
+                                          <tr><td align="center" border="0" width="250" style="font-family: Helvetica, Arial, serif; font-size: 20px;"><a href="#cta-bot" style="color: #FFFFFF; display: block; text-decoration: none;"><span style="color: #FFFFFF;">See All Programs</span></a></td></tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr><td height="22"></td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="36"></td></tr>
+                </table>
+                <!-- FOOTER -->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="540" class="device540">
+                  <tr><td height="28"></td></tr>
+                  <tr>
+                    <td align="left" valign="top">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="472" class="device500">
+                        <tr><td align="center" style="color: #BECCF0; font-family: Helvetica, Arial, sans-serif; font-size: 12px;">Questions? Please contact us at:</td></tr>
+                        <tr><td height="12"></td></tr>
+                        <tr><td align="center" style="color: #BECCF0; font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><span class="appleLinks">Degree Hunting<br/>123 Address Street<br/>Boston MA, 01234</span></td>
+                        </tr>
+                        <tr><td height="12"></td></tr>
+                        <tr><td align="center" style="color: #BECCF0; font-family: Helvetica, Arial, sans-serif; font-size: 12px;">You received this email because in the past you agreed to receive email from the Degree Hunting affiiliate network. If you like, you can <a href="#unsub-bottom" style="color: #BECCF0; text-decoration: underline;"><span style="color: #BECCF0;">unsubscribe</span></a>.</td></tr>
+                        <tr><td height="12"></td></tr>
+                        <tr><td align="center" style="color: #BECCF0; font-family: Helvetica, Arial, sans-serif; font-size: 12px;">Copyright &copy; 2014 Degree Hunting. This is a marketing message.</td></tr>
+                        <tr><td height="18"></td></tr>
+                        <tr>
+                          <td align="center">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0">
+                              <tr><td bgcolor="#BECCF0" height="1" width="200" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr><td height="18"></td></tr>
+                        <tr><td align="center" style="color: #BECCF0; font-family: Helvetica, Arial, sans-serif; font-size: 12px;">To unsubscribe from all messages, please reply to this email with the subject "Unsubscribe".</td></tr>
+                        <tr><td height="12"></td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr><td height="14"></td></tr>
+                </table>
+              </td>
+              <td border="0" width="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
